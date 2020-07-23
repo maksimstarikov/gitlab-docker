@@ -8,7 +8,7 @@ build:
         - mkdir build
         - touch "build/test.txt"
         - composer install
-        - ./vendor/bit/phpunit phpunit/
+        - ./vendor/bin/phpunit phpunit/
     artifacts:
         paths:
             - build/
