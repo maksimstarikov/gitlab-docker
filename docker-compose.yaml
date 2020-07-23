@@ -31,3 +31,5 @@ services:
         networks:
             - gitlabci
             - default
+        extra_hosts:
+            - "plusdental:3.237.199.216"

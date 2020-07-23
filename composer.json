@@ -1,0 +1,11 @@
+{
+    "name": "plusdental/gitlab-ci",
+    "description": "POC Plusdental CI",
+    "authors": [
+        {
+            "name": "maxim",
+            "email": "maxim@maxistar.ru"
+        }
+    ],
+    "require": {}
+}
