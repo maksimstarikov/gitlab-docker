@@ -1,6 +1,9 @@
 version: "2"
 networks:
     gitlabci:
+    default:
+        driver: bridge
+
 services:
     gitlab:
         image: gitlab/gitlab-ce:latest
@@ -27,3 +30,4 @@ services:
             - gitlab
         networks:
             - gitlabci
+            - default
