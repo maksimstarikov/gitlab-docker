@@ -17,7 +17,7 @@ sniffer:
    script:
        - echo "Code Standards"
        - ./vendor/bin/phpcs phpunit/ --standard=PSR12
-test:
+phpunit:
    stage: phpunit
    script:
        - echo "PHP Unit"
