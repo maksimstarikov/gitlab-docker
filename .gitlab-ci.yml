@@ -10,7 +10,7 @@ build:
         - composer install
     artifacts:
         paths:
-            - build/
+            - ./
 test:
    stage: phpunit
    script:
