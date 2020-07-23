@@ -1,0 +1,28 @@
+version: "2"
+networks:
+    gitlabci:
+services:
+    gitlab:
+        image: gitlab/gitlab-ce:latest
+        container_name: gitlab_main
+        ports:
+            - "80:80"
+            - "1022:22"
+        volumes:
+            - /srv/gitlab/config:/etc/gitlab
+            - /srv/gitlab/logs:/var/log/gitlab
+            - /srv/gitlab/data:/var/opt/gitlab
+        restart: always
+        networks:
+            - gitlabci
+#    runner:
+#        build: docker/runner
+#        container_name: gitlab_runner
+#        restart: always
+#        volumes:
+#            - /srv/gitlab-runner/config:/etc/gitlab-runner
+#            - /var/run/docker.sock:/var/run/docker.sock
+#        links:
+#            - gitlab
+#        networks:
+#            - gitlabci
