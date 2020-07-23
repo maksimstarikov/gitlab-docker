@@ -15,6 +15,7 @@ services:
         restart: always
         networks:
             - gitlabci
+        hostname: plusdental.maxistar.me
 #    runner:
 #        build: docker/runner
 #        container_name: gitlab_runner
