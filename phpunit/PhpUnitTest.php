@@ -6,7 +6,7 @@
 
 declare(strict_types=1);
 
-namespace plusdental\ci\pos
+namespace plusdental\ci\pos;
 
 use PHPUnit\Framework\TestCase;
 
