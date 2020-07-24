@@ -1,5 +1,8 @@
 gitlab docker-compose image
 
+
+sudo apt-get install docker.io docker-compose mc
+sudo apt install               docker-compose
 ```
 docker run --detach \
     --hostname gitlab.maxistar.me \

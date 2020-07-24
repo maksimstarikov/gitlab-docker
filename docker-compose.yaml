@@ -18,7 +18,7 @@ services:
         restart: always
         networks:
             - gitlabci
-        hostname: "plusdental.maxistar.me"
+        hostname: "plusdentalci.maxistar.me"
     runner:
         build: docker/runner
         container_name: gitlab_runner
@@ -32,4 +32,4 @@ services:
             - gitlabci
             - default
         extra_hosts:
-            - "plusdental:3.237.199.216"
+            - "plusdentalci:3.237.180.20"
