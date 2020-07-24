@@ -1,4 +1,4 @@
-gitlab docker-compose image
+# gitlab docker-compose image
 
 
 sudo apt-get install docker.io docker-compose mc
