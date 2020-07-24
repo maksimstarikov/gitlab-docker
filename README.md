@@ -2,7 +2,7 @@ gitlab docker-compose image
 
 
 sudo apt-get install docker.io docker-compose mc
-sudo apt install               docker-compose
+sudo usermod -aG docker ubuntu
 ```
 docker run --detach \
     --hostname gitlab.maxistar.me \
@@ -24,8 +24,8 @@ register runner:
 docker run --rm \
 -v /srv/gitlab-runner/config:/etc/gitlab-runner \
 gitlab/gitlab-runner register \
---non-interactive   --executor "shell"   --url "http://plusdental.maxistar.me/" \
---registration-token "QnxbySk6E67GFwJvR7ya"   \
+--non-interactive   --executor "shell"   --url "http://plusdentalci.maxistar.me/" \
+--registration-token "VrUgVFqNxQ9KgcQGExGG"   \
 --description "bash-docker-runner" \
 --tag-list "docker,aws"   --run-untagged="true"   \
 --locked="false" \
