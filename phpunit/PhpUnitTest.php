@@ -10,7 +10,7 @@ namespace plusdental\ci\pos;
 
 use PHPUnit\Framework\TestCase;
 
-final class1 PhpUnitTest extends TestCase
+final class PhpUnitTest extends TestCase
 {
     public function testTriialThing(): void
     {
